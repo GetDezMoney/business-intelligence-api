@@ -1766,7 +1766,7 @@ At {score} points, this is a NURTURE lead requiring long-term development. These
 This score reflects the company's profile strength and market positioning:
 
 Industry: {industry.title()} - {'High-value service industry' if industry in ['healthcare', 'legal', 'finance'] else 'Standard industry classification'}
-Business Size: {size.title()} - {'Established business with growth potential' if size in ['medium', 'large'] else 'Smaller business with scaling opportunities'}
+Business Size: {(size or 'unknown').title()} - {'Established business with growth potential' if size and size in ['medium', 'large'] else 'Smaller business with scaling opportunities'}
 Geographic Location: {location} - {'Clear market presence established' if location != 'unknown' else 'Location information needs verification'}
 Team Size: {employees} - {'Substantial team indicating growth and budget' if '50+' in str(employees) or '100+' in str(employees) else 'Growing team with expansion needs'}
 

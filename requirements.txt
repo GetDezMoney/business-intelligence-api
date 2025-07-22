@@ -1,6 +1,9 @@
 flask==2.3.3
+flask-cors==4.0.0
 flask-limiter==3.5.0
 requests==2.31.0
 beautifulsoup4==4.12.2
 lxml==4.9.3
 python-whois==0.8.0
+urllib3==2.0.4
+dataclasses-json==0.6.1
